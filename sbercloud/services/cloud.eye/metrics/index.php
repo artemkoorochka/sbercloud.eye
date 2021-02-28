@@ -7,6 +7,7 @@ use Matrix\Main\Web\HttpClient;
 use Matrix\Main\Application;
 
 require_once $_SERVER["DOCUMENT_ROOT"] . "/matrix/header.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/matrix/php_interface/sbercloud.php";
 
 $request = Application::getInstance()->getContext()->getRequest();
 
@@ -30,11 +31,11 @@ $arResult = [
                             array (
                                 'user' =>
                                     array (
-                                        'name' => 'hackathon103',
-                                        'password' => 'BreakingCode',
+                                        'name' => $sbercloudLogin,
+                                        'password' => $sbercloudPassword,
                                         'domain' =>
                                             array (
-                                                'name' => 'hackathon103',
+                                                'name' => $sbercloudDomain,
                                             ),
                                     ),
                             ),
