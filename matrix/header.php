@@ -1,0 +1,1 @@
+<?require_once($_SERVER["DOCUMENT_ROOT"]."/matrix/modules/main/include/prolog.php");?>

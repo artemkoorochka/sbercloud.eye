@@ -1,0 +1,8 @@
+### https://www.jetbrains.com/help/phpstorm/exploring-http-syntax.html#access-web-service-with-authentication
+
+GET http://google.com
+Accept: */*
+Cache-Control: no-cache
+
+###
+

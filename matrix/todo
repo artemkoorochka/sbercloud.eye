@@ -1,0 +1,32 @@
+.
+..
+include.php - optimize
+
+.
+..
+start.php - optimize
+
+.
+..
+error_reporting(COption::GetOptionInt("main", "error_reporting", E_COMPILE_ERROR|E_ERROR|E_CORE_ERROR|E_PARSE) & ~E_STRICT & ~E_DEPRECATED);
+
+.
+..
+use Matrix\Main\Localization\Loc;
+Loc::loadLanguageFile(__FILE__);
+
+
+.
+..
+
+/**
+ * TODO
+ */
+d("application");
+die;
+
+.
+..
+ mysql --default-character-set=utf8 matrix < aksoft_hello.sql
+
+Дамп можно залить командой
